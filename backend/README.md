@@ -19,12 +19,13 @@ MongoDB
             URL: localhost:8080/user
    3.) Create POST API for creating new user with a default status of "active"
             
-            URL: localhost:8080/user-add,
-  			req body: { name: "sample name", age: 'sample age' }
-   4.) Create PUT endpoint that will update status to "not active" or "active" of a specific user via "_id" field
+            URL: localhost:8080/user-add
+  			   req body: { name: "sample name", age: 'sample age' }
+   4.) Create PUT endpoint that will update status to "not active" or "active" of a specific user via id field.
+       Negate the new status depending on its original status value from the database. 
    
-            URL: localhost:8080/user-status,
-  			req body: { userID: userID, status: "active" or "not active"}
+          URL: localhost:8080/user-status
+  			 req body: { userID: userID }
             
 ##  Time: 1 hr
 ##  Good Luck!!
